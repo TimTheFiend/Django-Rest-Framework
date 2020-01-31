@@ -17,5 +17,8 @@
         "**/apps.py": true,
         "requirements.txt": true
     },
-    "explorerExclude.backup": null
+    "explorerExclude.backup": null,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.pythonPath": "env\\Scripts\\python.exe"
 }
