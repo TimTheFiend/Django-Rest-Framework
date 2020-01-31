@@ -1,0 +1,21 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "env": true,
+        ".vscode": true,
+        ".gitignore": true,
+        "**/__pycache__": true,
+        "**/__init__.py": true,
+        "**/wsgi.py": true,
+        "wsgi.py": true,
+        "**/migrations": true,
+        "**/asgi.py": true,
+        "**/apps.py": true,
+        "requirements.txt": true
+    },
+    "explorerExclude.backup": null
+}
