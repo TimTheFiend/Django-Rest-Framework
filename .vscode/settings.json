@@ -15,7 +15,8 @@
         "**/migrations": true,
         "**/asgi.py": true,
         "**/apps.py": true,
-        "requirements.txt": true
+        "requirements.txt": true,
+        "completed_library_project": true
     },
     "explorerExclude.backup": null,
     "python.linting.flake8Enabled": true,
