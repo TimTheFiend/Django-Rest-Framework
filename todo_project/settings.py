@@ -26,13 +26,26 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # 3rd Party
+    'rest_framework',
+    'corsheaders',
+
     # Local
     'todos.apps.TodosConfig',
 ]
 
+
+# NOTE New
+REST_FRAMEWORK = {
+    'DEFAULT_PREMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ]
+}
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',  # Note Important that it goes here
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -57,6 +70,12 @@ TEMPLATES = [
         },
     },
 ]
+
+# Note New
+CORS_ORIGIN_WHITELIST = (
+    'http://localhost:3000',  # Note: Default React port
+    'http://localhost:8000',  # Note Default Django Port
+)
 
 WSGI_APPLICATION = 'todo_project.wsgi.application'
 
