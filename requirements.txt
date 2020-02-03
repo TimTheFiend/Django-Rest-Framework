@@ -1,5 +1,0 @@
-django
-djangorestframework
-flake8
-django-cors-headers
-httpie
