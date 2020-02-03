@@ -20,7 +20,7 @@ class BlogTests(TestCase):
             title='a title',
             body='a body',
         )
-        test_post.save()
+    test_post.save()
 
     def test_blog_content(self):
         post = Post.objects.get(id=1)
