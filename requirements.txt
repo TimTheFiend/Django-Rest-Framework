@@ -1,0 +1,5 @@
+django
+djangorestframework
+pylint
+django-rest-auth
+django-allauth
