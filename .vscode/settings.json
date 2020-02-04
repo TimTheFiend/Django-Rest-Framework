@@ -8,7 +8,7 @@
         "**/__pycache__": true,
         "**/__init__.py": true,
         "*.zip": true,
-        "env": false,
+        "env": true,
         "**/.gitignore": true,
         "*.sqlite3": true,
         "**/migrations": true,

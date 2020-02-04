@@ -23,6 +23,7 @@ INSTALLED_APPS = [
     # 3rd Party
     'rest_framework',
     'rest_framework.authtoken',
+    'rest_framework_swagger',
     'rest_auth',
     'allauth',
     'allauth.account',
@@ -43,6 +44,12 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema', # NOTE New!
 }
+
+SWAGGER_SETTINGS = {
+    'LOGIN_URL': 'rest_framework:login',
+    'LOGOUT_URL': 'rest_framework:logout',
+}
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -107,7 +114,9 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = '/static/'
-
+STATICFILSE_DIR = [
+    os.path.join(BASE_DIR, 'static'),
+]
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'  # New!
 SITE_ID = 1  # New!
 
