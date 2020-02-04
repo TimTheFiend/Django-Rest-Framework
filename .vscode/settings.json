@@ -8,7 +8,7 @@
         "**/__pycache__": true,
         "**/__init__.py": true,
         "*.zip": true,
-        "env": true,
+        "env": false,
         "**/.gitignore": true,
         "*.sqlite3": true,
         "**/migrations": true,
@@ -18,5 +18,7 @@
         "**/apps.py": true
     },
     "explorerExclude.backup": null,
-    "python.pythonPath": "env\\Scripts\\python.exe"
+    "python.pythonPath": "env\\Scripts\\python.exe",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
 }

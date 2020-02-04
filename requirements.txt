@@ -3,3 +3,7 @@ djangorestframework
 pylint
 django-rest-auth
 django-allauth
+pylint-django
+coreapi==2.3.3
+pyyaml==5.1.2
+django-rest-swagger==2.2.0
